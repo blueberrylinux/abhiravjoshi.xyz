@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#f7f5f0;--ink:#0e1b2c;--ink-soft:#31405a;--muted:#6b7688;--cobalt:#2547d0;--bronze:#a97e3f;--line:#d9d4c8}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1200px;height:630px;overflow:hidden}
+body{background:var(--ivory);color:var(--ink);font-family:"Archivo",Helvetica,Arial,sans-serif;position:relative;-webkit-font-smoothing:antialiased}
+.grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:72px 72px;opacity:.38;
+  -webkit-mask-image:radial-gradient(ellipse 80% 75% at 65% 40%,#000 25%,transparent 75%);mask-image:radial-gradient(ellipse 80% 75% at 65% 40%,#000 25%,transparent 75%)}
+.orb{position:absolute;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,rgba(37,71,208,.14),transparent 64%);top:-260px;right:-220px}
+.bar{position:absolute;left:0;top:0;right:0;height:8px;background:var(--cobalt)}
+.inner{position:relative;padding:72px 84px 0 84px;height:100%;display:flex;flex-direction:column}
+.brand{display:flex;align-items:center;gap:12px;font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:26px;letter-spacing:-.01em}
+.dot{width:12px;height:12px;border-radius:50%;background:var(--cobalt);box-shadow:0 0 0 6px rgba(37,71,208,.14)}
+.kicker{display:inline-flex;align-items:center;gap:10px;margin-top:40px;font-size:15px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--cobalt);border:1.5px solid rgba(37,71,208,.3);border-radius:999px;padding:9px 18px;background:rgba(37,71,208,.05);width:max-content}
+.kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--cobalt)}
+h1{font-family:"Fraunces",Georgia,serif;font-weight:400;font-size:66px;line-height:1.06;letter-spacing:-.02em;margin-top:26px;max-width:900px}
+h1 em{font-style:italic;color:var(--cobalt)}
+h1 .u{position:relative;white-space:nowrap}
+h1 .u::after{content:"";position:absolute;left:0;bottom:.05em;height:.09em;width:100%;background:var(--bronze)}
+.meta{display:flex;gap:56px;margin-top:auto;margin-bottom:56px}
+.meta div{border-left:3px solid var(--line);padding-left:18px}
+.meta strong{font-family:"Fraunces",Georgia,serif;font-size:44px;font-weight:500;display:block;line-height:1.1}
+.meta span{font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.url{position:absolute;right:84px;top:78px;font-size:15px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--bronze)}
+</style></head><body>
+<div class="bar"></div><div class="grid"></div><div class="orb"></div>
+<div class="inner">
+  <div class="brand"><span class="dot"></span>Abhirav Joshi</div>
+  <span class="kicker">GTM Engineer · Open to remote roles worldwide</span>
+  <h1>I build the <em>revenue systems</em> that take a business from zero to <span class="u">closed deals</span>.</h1>
+  <div class="meta">
+    <div><strong>230</strong><span>Gym members, from 10</span></div>
+    <div><strong>25</strong><span>B2B deals from zero presence</span></div>
+    <div><strong>9 yrs</strong><span>Shipping code &amp; pipeline</span></div>
+  </div>
+  <div class="url">abhiravjoshi.xyz</div>
+</div>
+</body></html>
